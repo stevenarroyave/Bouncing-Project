@@ -5,7 +5,7 @@ var bubbles = [];
 function setup() {
   createCanvas(594, 841);
 
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 7; i++) {
     bubbles[i] = new Bubble(random(width), random(height));
   }
 }
@@ -15,8 +15,8 @@ function Bubble(x, y) {
   this.y = y;
   this.r = 48;
   this.col = color(255);
-  this.speedX = random(-5, 5);
-  this.speedY = random(-5, 5);
+  this.speedX = random(-2, 2);
+  this.speedY = random(-2, 2);
 
   this.changeColor = function() {
     this.col = color(random(255), random(255), random(255));
