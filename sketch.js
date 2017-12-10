@@ -6,7 +6,7 @@ function setup() {
   var canvas = createCanvas(594, 841);
     canvas.parent("myContainer");
 
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 7; i++) {
     bubbles[i] = new Bubble(random(width-48), random(height-48));
   }
 }
