@@ -6,8 +6,8 @@ function setup() {
   var canvas = createCanvas(594, 841);
     canvas.parent("myContainer");
 
-  for (var i = 0; i < 7; i++) {
-    bubbles[i] = new Bubble(random(width), random(height));
+  for (var i = 0; i < 10; i++) {
+    bubbles[i] = new Bubble(random(width-48), random(height-48));
   }
 }
 
@@ -43,11 +43,15 @@ function Bubble(x, y) {
   this.update = function() {
     this.x = this.x + this.speedX;
     this.y = this.y + this.speedY;
+    this.x1 = width-48
+    this.x2 = 48
+    this.y1 = height-48
+    this.y2 = 48
 
-    if (  this.x > width ||   this.x < 0){
+    if (  this.x > this.x1  ||   this.x < this.x2){
       this.speedX = this.speedX * -1;
     }
-    if (  this.y > height ||   this.y < 0){
+    if (  this.y > this.y1 ||   this.y < this.y2){
       this.speedY = this.speedY * -1;
     }
   }
