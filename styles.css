@@ -1,4 +1,4 @@
-body{
+body{  /*Setting the body style*/
   background-color: #333;
   background-image: url("http://blog.stockunlimited.com/wp-content/uploads/2016/03/1624923.jpg");
   font-family: helvetica;
@@ -8,7 +8,7 @@ body{
   padding: 0;
 }
 
-header{
+header{   /*Setting the header style*/
   height: 100px;
   width: 100%;
   background-color: #FFFFFF;
@@ -16,7 +16,7 @@ header{
   margin-bottom: 40px;
 }
 
-#myContainer{
+#myContainer{   /*Setting the style and placement of the javascript sketch*/
   padding-left: 0;
   padding-right: 0;
   margin-left: auto;
@@ -25,7 +25,7 @@ header{
   width: 1000px;
 }
 
-.newHeadings{
+.newHeadings{    /*Creating a new style for the "text box" below the sketch to describe the project*/
   height: 150px;
   width: 100%;
   background-color: rgba(255,255,255,0.65) ;
@@ -36,7 +36,7 @@ header{
 
 
 
-footer{
+footer{   /*Setting the footer style. Chose not to use one in the end */
   height: 50px;
   width: 100%;
   background-color: white;
